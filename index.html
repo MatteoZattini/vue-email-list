@@ -15,7 +15,7 @@
         <div class="container mt-5">
             <div>
                 <!-- <ul v-if="!isLoading"> -->
-                    <template v-if="listaEmail == myInput">
+                    <template v-if="listaEmail.length == myInput">
                         <li v-for="email in listaEmail">{{ email }}</li>
                     </template>
                 <!-- </ul> -->
