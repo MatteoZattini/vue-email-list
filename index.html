@@ -12,7 +12,17 @@
 </head>
 <body>
     <div id="app">
-        
+        <div class="container">
+            <div>
+                <ul>
+                    <li v-for="email in listaEmail">{{ email }}</li>
+                </ul>
+            </div>
+            <div class="input-group w-25">
+                <input type="text" class="form-control" placeholder="quante email vuoi stampare?" aria-label="stampa emails" aria-describedby="btnstampa">
+                <button id="btnstampa" class="btn btn-outline-secondary" type="button">stampa</button>
+            </div>
+        </div>
 
     </div>
 
