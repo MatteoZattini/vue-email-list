@@ -14,9 +14,11 @@
     <div id="app">
         <div class="container mt-5">
             <div>
-                <ul>
-                    <li v-for="email in listaEmail">{{ email }}</li>
-                </ul>
+                <!-- <ul v-if="!isLoading"> -->
+                    <template v-if="!isLoading">
+                        <li v-for="email in listaEmail">{{ email }}</li>
+                    </template>
+                <!-- </ul> -->
             </div>
             <div class="input-group w-25">
                 <input id="numberInput" type="number" min="0" max="10" class="form-control" placeholder="quante email vuoi stampare?" aria-label="stampa emails" aria-describedby="btnstampa">
