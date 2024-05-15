@@ -4,8 +4,8 @@ createApp({
   data() {
     return {
       listaEmail: [],
-      myInput: document.getElementById("numberInput"),
-      isLoading: true
+      myInput: null
+
     }
   },
   methods: {
@@ -16,8 +16,6 @@ createApp({
           this.listaEmail.push(element.response)      
         })
       };
-
-      this.isLoading = false
     },
 
   },
